@@ -1,11 +1,8 @@
 
 ---
-Subtitulo: "O maior canal de programação do País 💻"
+Icon: "🧑‍💻 "
+Subtitulo: ""
+cta: "📬 veja nossas últimas postagens "
 ---
-
-
-Aqui você encontrará
-
-- As postagens mais recentes 🥶
-- As notícias mais quentes 😄
+[Link Text](https://www.example.com/)
 

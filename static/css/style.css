@@ -8,4 +8,28 @@
   ;
 }
 
+body, html {
+  height: 100vh;
+  
+}
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main{
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.gradient-text {
+  background: linear-gradient(to top, #f97316,#eab308); /* Replace with your desired gradient colors */
+  -webkit-background-clip: text; /* For Safari */
+  background-clip: text;
+  color: #0000; /* Make the text transparent so the background gradient shows through */
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

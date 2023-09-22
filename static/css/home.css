@@ -1,21 +1,54 @@
-header {
-    padding: 20px;
+
+
+section {
     display: flex;
-    justify-content: space-between;
-  }
- 
-header ul {
-    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.icon {
+    font-size: 12rem;
+    padding: 12px;
     
-
-
-}  
-
-header ul a {
-    margin-left: 24px;
-    text-decoration: none;
 }
 
-header ul a:hover {
-    color: #0466c8
+h2 {
+    margin-top: 2rem;
+    font-size: 2rem;
 }
+
+.cta {
+    margin-top: 36px;
+    margin-bottom: 36px;
+    background-color:#0466c8;
+    padding: 12px 24px 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: x-large;
+    transition: background-color 0.5s ease;
+    
+}
+
+
+
+.cta:hover {
+    background-color: #00a8e8;
+}
+
+.box:not(:hover) {
+    transition: background-color 1s ease; /* Add a transition for the background-color property */
+    background-color: initial; /* Set the initial color again */
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.social {
+    
+    display: flex;
+    margin: 24px;
+    
+}
+
