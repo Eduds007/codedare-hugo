@@ -1,0 +1,21 @@
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+ 
+header ul {
+    display: flex;
+    
+
+
+}  
+
+header ul a {
+    margin-left: 24px;
+    text-decoration: none;
+}
+
+header ul a:hover {
+    color: #0466c8
+}
