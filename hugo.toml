@@ -1,3 +1,6 @@
 baseURL = 'https://edu_milanez.e.usp.br/siteestatico/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'CodeDare'
+
+[permalinks]
+posts = "/post/:slug/"

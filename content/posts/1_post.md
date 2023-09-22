@@ -2,6 +2,7 @@
 title = 'Django'
 date = 2023-09-22T15:50:16-03:00
 draft = false
+slug = '1'
 +++
 Aprenda Django em apenas quatro passos!
 
