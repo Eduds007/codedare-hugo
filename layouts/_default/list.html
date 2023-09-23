@@ -6,22 +6,26 @@
     <div class="grid">
         {{ range .Pages }}
             
-        <div class="post">
-            <a href="{{ .RelPermalink }}">
-                    <img src="{{ relURL .Params.image }}" alt="thumb"> 
-                    <p class="title">{{ .Title }}</p>
-                    <p class="Subtitle"> {{ .Params.Subtitle }}</p>
-                    <div class="hashtags">
+            <article class="post">
+                 <a href="{{ .RelPermalink }}"> 
+                        <img src="{{ relURL .Params.image }}" alt="thumb"> 
+                        <div class="post-overview">
+                            <div class="post-text">
 
-                        {{ range .Params.topic }}
-                        <p>{{ . }}</p>
-                        {{ end }}
-                    </div>
-                </a>
-            </div>
-            
-            {{ end }}
+                                <p class="name">{{ .Title }}</p>
+                                <p class="subtitle"> {{ .Params.Subtitle }}</p>
+                            </div>
+                            <div class="hashtags">
+    
+                                {{ range .Params.topic }}
+                                <p class="tag">{{ . }}</p>
+                                {{ end }}
+                            </div>
+                        </div>
+                    </a> 
+            </article>
+        {{ end }}
     </div>
     
 </section>
-    {{ end }}
+{{ end }}
