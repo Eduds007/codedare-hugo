@@ -4,12 +4,14 @@
   color: white;
   background-color: #001233;
   font-family: 'Trebuchet MS', sans-serif;
+  max-width: 100%;
   
   ;
 }
 
 body, html {
   height: 100vh;
+  
   
 }
 
