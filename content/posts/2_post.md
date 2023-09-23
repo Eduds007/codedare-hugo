@@ -10,10 +10,6 @@ topic = ['Flask', 'Backend']
 
 
 
-Claro, aqui está o tutorial do Flask com emojis! 
-
-# Tutorial do Flask 🌶️
-
 ## Introdução ao Flask 🚀
 
 O Flask é um microframework da web para Python que facilita a criação de aplicativos web simples e poderosos. Neste tutorial, você aprenderá a configurar um ambiente de desenvolvimento Flask e criar uma aplicação web básica.
@@ -27,14 +23,15 @@ Certifique-se de ter o Python instalado em sua máquina. Você pode baixá-lo em
 É uma prática recomendada usar um ambiente virtual para isolar seu projeto Flask. Abra o terminal e execute os seguintes comandos:
 
 ```bash
-# Instale o pacote virtualenv se ainda não estiver instalado
+# Instale o pacote virtualenv 
 pip install virtualenv
 
 # Crie um ambiente virtual
 virtualenv venv
 
 # Ative o ambiente virtual
-source venv/bin/activate   # No Windows, use "venv\Scripts\activate"
+source venv/bin/activate   
+# No Windows, use "venv\Scripts\activate"
 ```
 
 ### Passo 2: Instalar o Flask 🌶️
@@ -60,7 +57,8 @@ app = Flask(__name__)
 def hello_world():
     return 'Olá, Flask! 🌶️'
 
-# Executar o aplicativo se este arquivo for o ponto de entrada
+# Executar o aplicativo se este arquivo
+# for o ponto de entrada
 if __name__ == '__main__':
     app.run()
 ```

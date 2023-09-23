@@ -26,7 +26,7 @@
 }
 
 .post-page h1 {
-    font-size: 36px; 
+    font-size: 2rem; 
     font-weight: bold;
     margin-top: 20px; 
     margin-bottom: 10px; 
@@ -34,7 +34,8 @@
 }
 
 .post-page p {
-    margin: 1rem;
+    margin: 1.5rem;
+    text-align: justify;
 }
 
 .post-page img {
@@ -50,4 +51,32 @@
 
 .post-page code span {
     background-color: #22272E
+}
+
+
+@media (max-width: 768px) {
+    .post-page h1 {
+        font-size: 1.5rem;
+    }
+
+    .post-page h2 {
+        font-size: 1.5rem;
+    }
+
+    .post-page h3 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-left: 2vw;
+    }
+
+    .post-page span {
+        max-width: 100%;
+    }
+
+    .post-page {
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+
+    
 }

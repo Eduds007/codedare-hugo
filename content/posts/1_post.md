@@ -8,7 +8,7 @@ image = "images/thumb1.png"
 topic = ['Markdown', 'Programming'] 
 +++
 
-Certamente! Vamos criar um tutorial em Markdown que explique o que é o Markdown e como usá-lo em conjunto com o Hugo, um gerador de sites estáticos.
+
 
 # Markdown e Hugo: Criando um Site Estático 📝🏗️
 

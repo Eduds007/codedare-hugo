@@ -10,9 +10,7 @@ topic = ['Django', 'Python 🐍']
 
 
 
-Claro, aqui está o tutorial do Django com emojis!
 
-# Tutorial do Django 🌐
 
 ## Introdução ao Django 🚀
 
@@ -27,14 +25,16 @@ Certifique-se de ter o Python instalado em sua máquina. Você pode baixá-lo em
 É uma boa prática usar um ambiente virtual para isolar seu projeto Django. Abra o terminal e execute os seguintes comandos:
 
 ```bash
-# Instale o pacote virtualenv se ainda não estiver instalado
+# Instale o pacote virtualenv 
 pip install virtualenv
 
 # Crie um ambiente virtual
 virtualenv venv
 
 # Ative o ambiente virtual
-source venv/bin/activate   # No Windows, use "venv\Scripts\activate"
+source venv/bin/activate   
+
+# No Windows, use "venv\Scripts\activate"
 ```
 
 ### Passo 2: Instalar o Django 🌐
@@ -73,7 +73,8 @@ Edite o arquivo `myproject/settings.py` e configure o banco de dados. Você pode
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': os.path.join(BASE_DIR, 
+        'db.sqlite3'),
     }
 }
 ```
@@ -102,7 +103,9 @@ from .models import Item
 
 def item_list(request):
     items = Item.objects.all()
-    return render(request, 'myapp/item_list.html', {'items': items})
+    return render(request, 
+    'myapp/item_list.html'
+    , {'items': items})
 ```
 
 ### Passo 8: Criar uma Página HTML 📝
@@ -135,7 +138,8 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('items/', views.item_list, name='item_list'),
+    path('items/', views.item_list,
+     name='item_list'),
 ]
 ```
 
