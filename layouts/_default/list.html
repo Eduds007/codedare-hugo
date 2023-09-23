@@ -1,16 +1,27 @@
 {{ define "main" }}
-<h2>{{ .Title }}</h2>
-<section>
+<section class="posts-page">
+    <h2>{{ .Title }}</h2>
+    
 
-    {{ range .Pages }}
-        <div class="posts">
-            <a href="{{ .RelPermalink }}">{{ .Title }}
-                <div>
-                    
-                </div>
+    <div class="grid">
+        {{ range .Pages }}
+            
+        <div class="post">
+            <a href="{{ .RelPermalink }}">
+                    <img src="{{ relURL .Params.image }}" alt="thumb"> 
+                    <p class="title">{{ .Title }}</p>
+                    <p class="Subtitle"> {{ .Params.Subtitle }}</p>
+                    <div class="hashtags">
 
-            </a>
-        </div>
-    {{ end }}
+                        {{ range .Params.topic }}
+                        <p>{{ . }}</p>
+                        {{ end }}
+                    </div>
+                </a>
+            </div>
+            
+            {{ end }}
+    </div>
+    
 </section>
-{{ end }}
+    {{ end }}

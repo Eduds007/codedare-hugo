@@ -3,10 +3,11 @@ title = 'Flask'
 subtitle = 'criando rotas com django'
 date = 2023-09-22T15:50:16-03:00
 draft = false
-slug = '2'
+slug = '3'
 image = "images/thumb2.png"
 topic = ['Django', 'Programming'] 
 +++
+
 
 
 

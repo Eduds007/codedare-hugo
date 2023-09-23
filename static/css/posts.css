@@ -1,0 +1,19 @@
+.posts-page {
+    background-color: red;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: rgb(30, 30, 31);
+    
+}
+
+.post {
+    margin: 12px;
+}
+
+
+.post a  {
+    text-decoration: none;
+}
