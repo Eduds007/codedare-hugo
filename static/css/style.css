@@ -28,10 +28,9 @@ main{
 }
 
 .gradient-text {
-  background: linear-gradient(to top, #f97316,#eab308); /* Replace with your desired gradient colors */
-  -webkit-background-clip: text; /* For Safari */
+  background: linear-gradient(to top, #f97316,#eab308); 
+  -webkit-background-clip: text; 
   background-clip: text;
-  color: #0000; /* Make the text transparent so the background gradient shows through */
-  font-weight: bolder;
+  color: #0000; 
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

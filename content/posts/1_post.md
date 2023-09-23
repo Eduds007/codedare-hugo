@@ -1,6 +1,6 @@
 +++
 title = 'Markdown 🤝 Hugo'
-subtitle = 'Aprenda a usaro Hugo'
+subtitle = 'Aprenda a usar o Hugo'
 date = 2023-09-22T15:50:16-03:00
 draft = false
 slug = '1'

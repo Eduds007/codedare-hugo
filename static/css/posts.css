@@ -98,8 +98,8 @@ a img {
 }
 
 .tag:not(:hover) {
-    transition: background-color 1s ease; /* Add a transition for the background-color property */
-    background-color: #0466c8; /* Set the initial color again */
+    transition: background-color 1s ease; 
+    background-color: #0466c8; 
 }
 
 @media (max-width: 820px) {
