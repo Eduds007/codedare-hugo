@@ -2,7 +2,9 @@
     <section>
         <p class="icon">{{ .Params.Icon }} </h2>
         <h2>O MAIOR CANAL DE <span class="gradient-text">PROGRAMAÇÃO</span> DO PAÍS 💻 </h2>
-        <p class="cta">{{ .Params.cta }} </h2>
+        <a class="recent-post" href="{{ relURL "posts" }}">
+            <p class="cta">{{ .Params.cta }}</p>
+        </a>
     </section>
 
 {{ end }}
