@@ -1,13 +1,32 @@
-image: registry.gitlab.com/pages/hugo:latest
+stages:
+  - build
+  - deploy
 
 variables:
-  GIT_SUBMODULE_STRATEGY: recursive
+  HUGO_VERSION: "0.88.1"
 
-pages:
+before_script:
+  - apt-get update -qy
+  - apt-get install -y wget
+  - wget https://github.com/gohugoio/hugo/releases/download/v$HUGO_VERSION/hugo_extended_${HUGO_VERSION}_Linux-64bit.deb
+  - dpkg -i hugo_extended_${HUGO_VERSION}_Linux-64bit.deb
+
+build:
+  stage: build
   script:
-    - hugo
-  artifacts:
-    paths:
-      - public
+    - hugo --minify
+
+deploy:
+  stage: deploy
   only:
-    - master
+    - master  # Adjust the branch to deploy from
+  script:
+    - mkdir public
+    - mv * public/
+    - cd public
+    - git init
+    - git config user.name "Your GitLab CI/CD"
+    - git config user.email "your@email.com"
+    - git add .
+    - git commit -m "Deploy from GitLab CI/CD"
+    - git push --force --quiet "https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.com/yourusername/yourrepository.git" master:gh-pages # Replace with your GitLab project URL
