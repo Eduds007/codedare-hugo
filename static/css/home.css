@@ -37,8 +37,8 @@ h2 {
 }
 
 .box:not(:hover) {
-    transition: background-color 1s ease; /* Add a transition for the background-color property */
-    background-color: initial; /* Set the initial color again */
+    transition: background-color 1s ease; 
+    background-color: initial; 
 }
 
 h3 {
