@@ -9,15 +9,13 @@ a img {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     
     
 }
 
 .post {
     margin: 24px;
-
-    width: 360px;
 }
 
 
@@ -49,7 +47,7 @@ a img {
 }
 
 .name  {
-    font-size: 24px;
+    font-size: 1.6rem;
     font-family: Verdana;
     font-weight: bold;
     padding-top: 12px;
@@ -62,7 +60,7 @@ a img {
 .subtitle {
     color: #979dac;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 1.2rem;
     background-color: var(--card-color);
 }
 
@@ -102,4 +100,12 @@ a img {
 .tag:not(:hover) {
     transition: background-color 1s ease; /* Add a transition for the background-color property */
     background-color: #0466c8; /* Set the initial color again */
+}
+
+@media (max-width: 820px) {
+    article .post {
+        width: 80%;
+    }
+
+    
 }
